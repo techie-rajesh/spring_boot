@@ -35,4 +35,9 @@ public class LaptopController
 	{
 		return ls.delete(id);
 	}
+	@DeleteMapping(value="/remove/{id}")
+	public String remove(@PathVariable int id)
+	{
+		return ls.delete(id);
+	}
 }
